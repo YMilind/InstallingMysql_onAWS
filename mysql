@@ -35,6 +35,10 @@ Uptime:   6 min 52 sec
 Threads: 1  Questions: 9  Slow queries: 0  Opens: 113  Flush tables: 1  Open tables: 106  Queries per second avg: 0.021
 */
 
+Connecting and creating db :  mysql -u root -p
+
+
+
 
 
 
