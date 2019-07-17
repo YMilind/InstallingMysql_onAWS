@@ -1,0 +1,9 @@
+#mysql57-community-release-el7-9.noarch.rpm
+
+Run :  wget https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+
+Compare checksum : md5sum mysql57-community-release-el7-9.noarch.rpm
+
+Install package :sudo rpm -ivh mysql57-community-release-el7-9.noarch.rpm
+
+Now use yum to install : yum install mysql-server
