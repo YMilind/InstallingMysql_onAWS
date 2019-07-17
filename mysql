@@ -7,3 +7,35 @@ Compare checksum : md5sum mysql57-community-release-el7-9.noarch.rpm
 Install package :sudo rpm -ivh mysql57-community-release-el7-9.noarch.rpm
 
 Now use yum to install : yum install mysql-server
+
+start daemon : sudo systemctl start mysqld
+
+check status : sudo systemctl status mysqld
+
+grep temroray password : sudo grep 'temporary password' /var/log/mysqld.log (store it to be used later)
+
+configure mySQL : sudo mysql_secure_installation
+
+Test installation : mysqladmin -u root -p version 
+
+Sample output
+/*mysqladmin  Ver 8.42 Distrib 5.7.26, for Linux on x86_64
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Server version  5.7.26
+Protocol version 10
+Connection  Localhost via UNIX socket
+UNIX socket  /var/lib/mysql/mysql.sock
+Uptime:   6 min 52 sec
+
+Threads: 1  Questions: 9  Slow queries: 0  Opens: 113  Flush tables: 1  Open tables: 106  Queries per second avg: 0.021
+*/
+
+
+
+
+
