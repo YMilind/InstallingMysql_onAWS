@@ -37,6 +37,14 @@ Threads: 1  Questions: 9  Slow queries: 0  Opens: 113  Flush tables: 1  Open tab
 
 Connecting and creating db :  mysql -u root -p
 
+How to all other machines to connect to db :
+
+# checking which hosts are allowed to connect 
+SELECT host FROM mysql.user WHERE User = 'root';
+
+CREATE USER 'root'@'ip_address' IDENTIFIED BY 'some_pass';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'ip_address'; //
+
 
 
 
